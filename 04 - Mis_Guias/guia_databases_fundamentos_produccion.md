@@ -10,13 +10,13 @@
 > o en una revisión de [[guia_dotnet_arquitectura_patrones_expanded|arquitectura]] real.
 >
 > Al terminar podrás:
-> - Explicar cómo funcionan los índices por dentro, no solo cómo crearlos
-> - Entender transacciones a nivel de isolation levels y sus trade-offs reales
-> - Decidir con criterio entre [[guia_dotnet_entrevista_completo|SQL]] y las distintas familias NoSQL
-> - Diseñar esquemas que escalen sin romper la consistencia
+> - Explicar cómo funcionan los [[Índices]] por dentro, no solo cómo crearlos
+> - Entender [[Transacciones]] a nivel de [[Isolation Levels]] y sus trade-offs reales
+> - Decidir con criterio entre [[SQL]] y las distintas familias [[NoSQL]]
+> - Diseñar esquemas que escalen sin romper la [[Consistencia]]
 > - Optimizar queries y detectar problemas de performance antes de que lleguen a producción
-> - Hablar con propiedad de sharding, replicación y consistencia eventual
-> - Conectar todo esto con [[guia_dotnet_entrevista_completo|EF Core]] en .NET para decisiones cotidianas
+> - Hablar con propiedad de [[Sharding]], [[Replicación]] y [[Consistencia Eventual]]
+> - Conectar todo esto con [[EF Core]] en .NET para decisiones cotidianas
 
 ---
 
@@ -259,7 +259,7 @@ graph TD
 
 ### Tipos de índices — y cuándo usar cada uno
 
-#### Clustered Index (Índice Agrupado)
+#### [[Clustered Index]] (Índice Agrupado)
 
 En SQL Server y MySQL/InnoDB, los datos de la tabla **son** el índice. Las filas se almacenan físicamente ordenadas según la clave del clustered index.
 
@@ -281,7 +281,7 @@ CREATE TABLE Orders (
 
 > ⚠️ **Error común:** Usar GUIDs (uniqueidentifier) como clustered index. Los GUIDs son aleatorios, entonces cada INSERT va a una posición aleatoria del árbol, causando fragmentación masiva y page splits constantes. Si necesitas GUIDs como PK, usa `NEWSEQUENTIALID()` en SQL Server o considera un surrogate key entero como clustered index.
 
-#### Non-Clustered Index (Índice No Agrupado)
+#### [[Non-Clustered Index]] (Índice No Agrupado)
 
 Una estructura B-Tree **separada** que contiene las columnas del índice más un puntero al registro real (RID en heap tables, o la clave del clustered index en tablas con clustered index).
 
@@ -295,9 +295,9 @@ Cuando el motor usa este índice para `WHERE CustomerId = 5`:
 1. Busca en el B-Tree del índice → encuentra los punteros a los registros
 2. Para cada puntero, hace un **Key Lookup** (o RID Lookup) para obtener el resto de las columnas
 
-Si la query solo necesita columnas que están en el índice, el paso 2 no es necesario — esto lleva al concepto de **covering index**.
+Si la query solo necesita columnas que están en el índice, el paso 2 no es necesario — esto lleva al concepto de **[[Covering Index]]**.
 
-#### Covering Index
+#### [[Covering Index]]
 
 Un índice que contiene todas las columnas que la query necesita. El motor puede satisfacer la query completa leyendo solo el índice, sin tocar la tabla.
 
@@ -1915,7 +1915,7 @@ graph LR
 
 **El beneficio real:** El modelo de lectura puede estar optimizado específicamente para las queries (desnormalizado, con las columnas exactas que necesitas), mientras el modelo de escritura garantiza consistencia. No tienes que comprometer el schema para satisfacer ambos requisitos.
 
-### Outbox Pattern — transaccionalidad con eventos
+### [[Outbox Pattern]] — transaccionalidad con eventos
 
 Un problema clásico: quieres guardar datos Y publicar un evento, de forma atómica. Si guardas y el mensaje falla, tu sistema queda inconsistente.
 
@@ -2104,3 +2104,6 @@ Lo que nunca hago: optimizar a ciegas. Cada cambio va acompañado de medición a
 
 *Guía generada como parte del plan de entrenamiento Staff/Arquitecto*
 *Versión 1.0 — Complementa: [[roadmap_zero_to_hero_updated]], [[guia_dotnet_arquitectura_patrones_expanded]]*
+s_expanded]]*
+]]*
+expanded]]*

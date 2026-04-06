@@ -1,6 +1,6 @@
 
 # Guía de Arquitectura y Diseño para [[guia_dotnet_entrevista_completo|Entrevistas .NET]]
-## Fase 5 — Patrones de diseño, [[roadmap_zero_to_hero_updated|Clean Architecture]], DDD y principios
+## Fase 5 — [[Patrones de diseño]], [[roadmap_zero_to_hero_updated|Clean Architecture]], [[DDD]] y principios
 
 > **Propósito de este documento**
 >
@@ -13,8 +13,8 @@
 >
 > - entender patrones sin memorizarlos como recetario
 > - explicar principios de diseño con criterio
-> - distinguir arquitectura limpia real vs “diagrama bonito”
-> - aterrizar DDD sin humo ni palabras vacías
+> - distinguir [[arquitectura limpia]] real vs “diagrama bonito”
+> - aterrizar [[DDD]] sin humo ni palabras vacías
 > - defender decisiones en [[roadmap_zero_to_hero_updated|entrevistas]] de nivel senior, staff y arquitectura
 >
 > La intención no es solo que “te sepas los nombres”, sino que **sepas cuándo usar algo, cuándo no, qué problemas resuelve y qué problemas introduce**.
@@ -25,9 +25,9 @@
 
 1. Cómo estudiar esta fase  
 2. Qué son los principios de diseño y por qué importan  
-3. SOLID a profundidad  
-4. Otros principios esenciales: DRY, KISS, YAGNI, SoC, GRASP, composición sobre herencia  
-5. Qué es realmente un patrón de diseño  
+3. [[SOLID]] a profundidad  
+4. Otros principios esenciales: [[DRY]], [[KISS]], [[YAGNI]], [[SoC]], [[GRASP]], composición sobre herencia  
+5. Qué es realmente un [[patrón de diseño]]  
 6. Cómo pensar patrones sin caer en “pattern mania”  
 7. Patrones creacionales  
 8. Patrones estructurales  
@@ -36,18 +36,18 @@
 11. [[roadmap_zero_to_hero_updated|Clean Architecture]] explicada de verdad  
 12. Capas, dependencias y reglas de dirección  
 13. Casos de uso / application services / interactors  
-14. Entities, Value Objects y Aggregates  
-15. Repositories y Unit of Work: cuándo sí y cuándo no  
-16. DTOs, mapeo y contratos  
-17. CQRS dentro de una arquitectura limpia  
-18. Vertical Slice Architecture  
-19. DDD explicado sin humo  
-20. Ubiquitous Language  
-21. Bounded Contexts  
-22. Entidades vs Value Objects  
-23. Aggregates y Aggregate Roots  
-24. Domain Services  
-25. Domain Events  
+14. [[Entities]], [[Value Objects]] y [[Aggregates]]  
+15. [[Repositories]] y [[Unit of Work]]: cuándo sí y cuándo no  
+16. [[DTOs]], mapeo y contratos  
+17. [[CQRS]] dentro de una arquitectura limpia  
+18. [[Vertical Slice Architecture]]  
+19. [[DDD]] explicado sin humo  
+20. [[Ubiquitous Language]]  
+21. [[Bounded Contexts]]  
+22. [[Entidades]] vs [[Value Objects]]  
+23. [[Aggregates]] y [[Aggregate Roots]]  
+24. [[Domain Services]]  
+25. [[Domain Events]]  
 26. Specifications  
 27. Anti-corruption Layer  
 28. Ejemplo completo de dominio: e-commerce / órdenes  
@@ -1207,7 +1207,7 @@ public class CreateOrderCommandHandler
 
 ---
 
-## 9.3 Observer
+## 9.3 [[Observer]]
 
 ### Idea
 Un sujeto notifica a observadores cuando ocurre algo.
@@ -5076,3 +5076,4 @@ Y algo importante:
 
 > En entrevistas, SQL no se trata de sintaxis.
 > Se trata de **pensamiento de datos, rendimiento y consistencia**.
+, rendimiento y consistencia**.

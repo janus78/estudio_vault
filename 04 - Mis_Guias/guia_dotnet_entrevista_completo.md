@@ -1,55 +1,55 @@
 
 # Guía definitiva de entrevistas .NET — Fase 1
-## ASP.NET Core a profundidad para [[roadmap_zero_to_hero_updated|entrevistas]] senior
+## [[ASP.NET Core]] a profundidad para [[roadmap_zero_to_hero_updated|entrevistas]] senior
 
-> Esta fase está enfocada en que puedas estudiar ASP.NET Core de verdad, no solo repetir definiciones.
+> Esta fase está enfocada en que puedas estudiar [[ASP.NET Core]] de verdad, no solo repetir definiciones.
 > La idea es que al terminar puedas:
 >
 > - explicar cómo viaja un request internamente
 > - responder preguntas senior con criterio
-> - conectar conceptos de middleware, routing, DI, auth, configuración y performance
+> - conectar conceptos de [[middleware]], [[routing]], [[Dependency Injection|DI]], auth, configuración y performance
 > - defender decisiones reales de [[guia_dotnet_arquitectura_patrones_expanded|arquitectura]]
 
 ---
 
 # Índice de la fase 1
 
-1. Qué es realmente ASP.NET Core  
+1. Qué es realmente [[ASP.NET Core]]  
 2. Ciclo de vida completo de un request  
-3. Kestrel, hosting y arranque de la aplicación  
-4. El pipeline de middleware  
-5. Routing internamente  
-6. Endpoints, Minimal APIs y Controllers  
-7. Dependency Injection profundo  
-8. Configuración y Options Pattern  
-9. Middleware vs Filters vs Endpoint Filters  
-10. Autenticación y autorización  
-11. JWT y refresh tokens end-to-end  
+3. [[Kestrel]], hosting y arranque de la aplicación  
+4. El pipeline de [[middleware]]  
+5. [[Routing]] internamente  
+6. Endpoints, [[Minimal APIs]] y [[Controllers]]  
+7. [[Dependency Injection]] profundo  
+8. Configuración y [[Options Pattern]]  
+9. [[Middleware]] vs [[Filters]] vs [[Endpoint Filters]]  
+10. [[Autenticación]] y [[autorización]]  
+11. [[JWT]] y [[refresh tokens]] end-to-end  
 12. Validación de configuración  
-13. Logging, tracing y observabilidad  
-14. Caché y output caching  
+13. [[Logging]], [[tracing]] y [[observabilidad]]  
+14. [[Caché]] y [[output caching]]  
 15. Versionado de APIs  
-16. Logging seguro de request/response  
-17. BackgroundService y apagado ordenado  
-18. Streaming y archivos por chunks  
+16. [[Logging]] seguro de request/response  
+17. [[BackgroundService]] y apagado ordenado  
+18. [[Streaming]] y archivos por [[chunks]]  
 19. Preguntas difíciles de entrevista y cómo responder  
 20. Checklist de estudio y práctica
 
 ---
 
-# 1. Qué es realmente ASP.NET Core
+# 1. Qué es realmente [[ASP.NET Core]]
 
-ASP.NET Core es un framework para construir aplicaciones HTTP modernas sobre .NET.  
+[[ASP.NET Core]] es un framework para construir aplicaciones HTTP modernas sobre .NET.  
 Pero esa frase, en entrevista, se queda corta.
 
 La forma senior de explicarlo es esta:
 
-**ASP.NET Core es un framework modular y multiplataforma que construye una tubería de procesamiento HTTP sobre el host genérico de .NET, usando middleware, routing, inyección de dependencias, configuración y logging integrados.**
+**[[ASP.NET Core]] es un framework modular y multiplataforma que construye una tubería de procesamiento HTTP sobre el [[Generic Host]] de .NET, usando [[middleware]], [[routing]], [[inyección de dependencias]], configuración y [[logging]] integrados.**
 
 Eso ya comunica varias cosas:
 
 - sabes que no es solo “web”
-- entiendes que está montado sobre Generic Host
+- entiendes que está montado sobre [[Generic Host]]
 - conoces que el request se procesa como pipeline
 - reconoces que DI, config y logging no son extras, sino parte del runtime de la app
 
@@ -99,11 +99,11 @@ flowchart TD
 Puede ser navegador, app móvil, Postman, otro microservicio, API Gateway, etc.
 
 ### 2. Kestrel recibe el socket y procesa HTTP
-Kestrel es el servidor web embebido en ASP.NET Core.  
+[[Kestrel]] es el servidor web embebido en ASP.NET Core.  
 Lee la conexión, parsea headers, método, path, body y crea el contexto del request.
 
-### 3. Se crea `HttpContext`
-`HttpContext` representa el request en curso.  
+### 3. Se crea [[HttpContext]]
+[[HttpContext]] representa el request en curso.  
 Contiene, entre muchas otras cosas:
 
 - `Request`
@@ -646,7 +646,7 @@ No es el más sofisticado del planeta, pero cubre la gran mayoría de escenarios
 
 ## Lifetimes
 
-### Singleton
+### [[Singleton]]
 Una sola instancia para toda la vida de la aplicación.
 
 Casos comunes:
@@ -1452,9 +1452,9 @@ Loggear bodies completos puede filtrar:
 
 ---
 
-# 17. BackgroundService y apagado ordenado
+# 17. [[BackgroundService]] y apagado ordenado
 
-## Qué es `BackgroundService`
+## Qué es [[BackgroundService]]
 
 Es una base para tareas en segundo plano gestionadas por el host.
 
@@ -2424,7 +2424,7 @@ var items = order.Items; // aquí podría dispararse consulta
 
 ---
 
-## 9.3 Explicit Loading
+## 9.3 [[Explicit Loading]]
 
 Cargas una navegación manualmente cuando decides hacerlo.
 
@@ -3105,13 +3105,13 @@ Cada tipo concreto tiene su propia tabla completa.
 
 ---
 
-# 24. Migraciones en producción
+# 24. [[Migrations|Migraciones]] en producción
 
 Tema muy real y muy importante.
 
 ## Qué son
 
-Migraciones permiten versionar cambios del esquema junto con el código.
+[[Migrations|Migraciones]] permiten versionar cambios del esquema junto con el código.
 
 ## Comandos típicos
 
@@ -6010,3 +6010,4 @@ A partir de aquí, lo ideal sería construir una o varias de estas extensiones:
    - storytelling técnico
    - cómo defender decisiones
    - cómo contestar cuando no sabes algo
+cuando no sabes algo

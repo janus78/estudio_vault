@@ -1,8 +1,8 @@
-# 🧠 Guía Máxima de Aprovechamiento de Suscripciones IA
+# 🧠 Guía Máxima de Aprovechamiento de Suscripciones [[IA]]
 ### [[guia-optimizacion-ia|ChatGPT Plus]] · [[guia-optimizacion-ia|Gemini Advanced]] · [[guia-optimizacion-ia|Claude Pro]] — $20/mes c/u → $60 total
 
 > **Para quién es esto:** Senior Engineers → [[roadmap_zero_to_hero_updated|Staff/Arquitecto]] | Trabajo técnico intensivo | Uso diario profesional  
-> **Objetivo:** Exprimir cada token, cada límite, cada herramienta disponible en las tres plataformas
+> **Objetivo:** Exprimir cada [[token]], cada límite, cada herramienta disponible en las tres plataformas
 
 ---
 
@@ -10,14 +10,14 @@
 
 1. [La Realidad de los Límites — Por Qué Se Acaban Tan Rápido](#1-la-realidad-de-los-límites)
 2. [Filosofía de Orquestación — Las 3 IAs como un Equipo](#2-filosofía-de-orquestación)
-3. [Claude Pro — Guía Completa de Aprovechamiento](#3-claude-pro)
-4. [ChatGPT Plus — Guía Completa de Aprovechamiento](#4-chatgpt-plus)
-5. [Gemini Advanced — Guía Completa de Aprovechamiento](#5-gemini-advanced)
-6. [Herramientas de Código: Claude Code, Codex, Gemini Code](#6-herramientas-de-código)
-7. [Estrategia de Modelos: Ligeros vs Pesados](#7-estrategia-de-modelos-ligeros-vs-pesados)
+3. [[Claude Pro]] — Guía Completa de Aprovechamiento
+4. [[ChatGPT Plus]] — Guía Completa de Aprovechamiento
+5. [[Gemini Advanced]] — Guía Completa de Aprovechamiento
+6. [[Herramientas de Código]]: [[Claude Code]], Codex, Gemini Code
+7. [[Estrategia de Modelos]]: Ligeros vs Pesados
 8. [Flujos de Trabajo por Caso de Uso](#8-flujos-de-trabajo-por-caso-de-uso)
-9. [Gestión de Contexto y Proyectos](#9-gestión-de-contexto-y-proyectos)
-10. [Plantillas de Prompts de Alto Rendimiento](#10-plantillas-de-prompts)
+9. [[Gestión de Contexto]] y Proyectos
+10. [[Plantillas de Prompts]] de Alto Rendimiento
 11. [Sistema Personal de Organización](#11-sistema-personal-de-organización)
 12. [Flujo Diario Recomendado](#12-flujo-diario-recomendado)
 
@@ -32,13 +32,13 @@ Cada empresa mide el consumo de manera diferente, pero todas tienen el mismo obj
 ```mermaid
 graph TD
     A[Tu mensaje] --> B{¿Qué consume?}
-    B --> C[Tokens de Input\nTu prompt + contexto anterior]
-    B --> D[Tokens de Output\nRespuesta generada]
-    B --> E[Tokens de Contexto\nHistorial acumulado]
+    B --> C[[[Tokens]] de Input\nTu [[prompt]] + [[contexto]] anterior]
+    B --> D[[[Tokens]] de Output\nRespuesta generada]
+    B --> E[[[Tokens]] de Contexto\nHistorial acumulado]
     C --> F[Costo real en compute]
     D --> F
     E --> F
-    F --> G[Límite de velocidad\nRate limit por hora/día]
+    F --> G[[[Rate limit]] por hora/día]
     F --> H[Límite de uso\nCuota mensual]
 ```
 
@@ -46,8 +46,8 @@ graph TD
 
 | Plataforma | Modelo | Tipo de Límite | Período | Nota Clave |
 |-----------|--------|---------------|---------|------------|
-| **Claude Pro** | claude-sonnet-4-6 | Mensajes/período | ~5 horas ventana | Se resetea automáticamente |
-| **Claude Pro** | claude-haiku-4-5 | Mensajes/período | Más generoso | Úsalo para drafts |
+| **[[Claude Pro]]** | claude-sonnet-4-6 | Mensajes/período | ~5 horas ventana | Se resetea automáticamente |
+| **[[Claude Pro]]** | claude-haiku-4-5 | Mensajes/período | Más generoso | Úsalo para drafts |
 | **ChatGPT Plus** | GPT-4o | Mensajes/3 horas | ~40-80 mensajes | Baja a GPT-4o mini automático |
 | **ChatGPT Plus** | o1/o3 | Mensajes/semana | Muy limitado | Reservar para razonamiento real |
 | **ChatGPT Plus** | o4-mini | Mensajes/día | Moderado | Mejor relación calidad/límite |
@@ -469,7 +469,7 @@ Usa Gemini Flash para exploración rápida e iteraciones. Cuando tengas algo que
 
 ## 6. Herramientas de Código
 
-### 6.1 [[guia-optimizacion-ia|Claude Code]]
+### 6.1 **[[Claude Code]]**
 
 Claude Code es la interfaz de línea de comandos (CLI) de Claude para trabajo de código agentico. Está incluida en tu suscripción Pro y es **fundamentalmente diferente** al chat.
 
@@ -1177,3 +1177,5 @@ gantt
 *Guía generada como documento vivo — actualiza la sección "Estado de Suscripciones" y el contexto de proyectos regularmente para mantener su utilidad.*
 
 *Versión: 1.0 | Audiencia: Senior → Staff/Arquitecto Engineer | Stack: .NET + Azure*
+ineer | Stack: .NET + Azure*
+ Azure*

@@ -1,7 +1,7 @@
-# Zero to Hero: Roadmap de Maestría para Senior Software Engineer
+# Zero to Hero: Roadmap de Maestría para [[Senior Software Engineer]]
 
-> **Versión Expandida y Revisada** — DSA · [[guia_dotnet_arquitectura_patrones_expanded|Software Architecture]] · [[guia_dotnet_arquitectura_patrones_expanded|System Design]]  
-> Diseñado para ingenieros Senior que apuntan a [[guia_dotnet_entrevista_completo|entrevistas]] de nivel Staff en FAANG/Big Tech  
+> **Versión Expandida y Revisada** — [[DSA]] · [[guia_dotnet_arquitectura_patrones_expanded|Software Architecture]] · [[guia_dotnet_arquitectura_patrones_expanded|System Design]]  
+> Diseñado para ingenieros Senior que apuntan a [[guia_dotnet_entrevista_completo|entrevistas]] de nivel [[Staff]] en [[FAANG]]/[[Big Tech]]  
 > Duración estimada: **26–30 semanas** (dedicación seria, no casual)
 
 ---
@@ -12,13 +12,13 @@
 2. [Principios del Roadmap](#principios)
 3. [Vista General del Plan](#vista-general)
 4. [Fase 1 — Fundamentos Visuales y Lógica](#fase-1)
-5. [Fase 2 — Dominio de Algoritmos y Patrones de Coding](#fase-2)
-6. [Fase 3 — Arquitectura y Diseño de Bajo Nivel (LLD)](#fase-3)
-7. [Fase 4 — System Design a Gran Escala (HLD)](#fase-4)
+5. [Fase 2 — Dominio de [[Algoritmos]] y [[Coding Patterns|Patrones de Coding]]](#fase-2)
+6. [Fase 3 — [[Arquitectura]] y [[LLD|Diseño de Bajo Nivel (LLD)]]](#fase-3)
+7. [Fase 4 — [[System Design]] a Gran Escala ([[HLD]])](#fase-4)
 8. [Fase 5 — Temas Transversales Críticos](#fase-5) *(nueva)*
 9. [Plan Semanal Detallado](#plan-semanal)
 10. [Biblioteca de Referencia Consolidada](#biblioteca)
-11. [Estrategia de Behavioral Interviews](#behavioral)
+11. [Estrategia de [[Behavioral Interviews]]](#behavioral)
 12. [Consejos de Oro para Entrevistas de Alto Nivel](#consejos-de-oro)
 13. [Métricas de Progreso y Autoevaluación](#metricas)
 
@@ -29,8 +29,8 @@
 | Símbolo | Significado |
 |---------|-------------|
 | 🔵 **Log2Base2** | Fundamentos visuales — Ver antes de implementar |
-| 🟡 **AlgoExpert** | Práctica de algoritmos orientada a FAANG |
-| 🟢 **Educative.io** | Patrones, LLD, HLD, Distributed Systems |
+| 🟡 **AlgoExpert** | Práctica de [[algoritmos]] orientada a [[FAANG]] |
+| 🟢 **Educative.io** | Patrones, [[LLD]], [[HLD]], [[Distributed Systems]] |
 | 🔴 **Recurso gratuito** | Solo cuando agrega valor que las plataformas no cubren |
 | ⚠️ **Crítico** | No omitir bajo ninguna circunstancia |
 | 💡 **Insight** | Consejo táctico de alto valor |
@@ -46,7 +46,7 @@ Este plan está diseñado sobre cuatro principios que lo distinguen de un simple
 Nunca implementes lo que no has visualizado primero. Log2Base2 existe para grabar la intuición estructural en tu cerebro antes de escribir una sola línea de código. Este orden no es opcional.
 
 **2. Patrones sobre Algoritmos**  
-Las entrevistas FAANG no evalúan si memorizaste Dijkstra — evalúan si reconoces en 3 minutos que el problema es un BFS en grafo implícito. Invertir tiempo en reconocer patrones acelera tu velocidad de solución más que estudiar algoritmos individuales.
+Las entrevistas [[FAANG]] no evalúan si memorizaste Dijkstra — evalúan si reconoces en 3 minutos que el problema es un BFS en grafo implícito. Invertir tiempo en reconocer patrones acelera tu velocidad de solución más que estudiar [[algoritmos]] individuales.
 
 **3. Trade-offs sobre Respuestas**  
 En System Design no existe "la arquitectura correcta". Existe "el mejor trade-off para estos constraints". Cada decisión que tomes debe ir acompañada de su justificación y sus limitaciones conocidas.

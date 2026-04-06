@@ -1,20 +1,20 @@
-# Guía de System Design — Framework Mental Completo
-## Del problema al sistema: cómo piensa un Staff Engineer
+# Guía de [[System Design]] — Framework Mental Completo
+## Del problema al sistema: cómo piensa un [[roadmap_zero_to_hero_updated|Staff Engineer]]
 
 > **Propósito de este documento**
 >
-> System Design es la habilidad que más separa a un Senior de un Staff Engineer.
+> [[System Design]] es la habilidad que más separa a un Senior de un [[roadmap_zero_to_hero_updated|Staff Engineer]].
 > No es sobre memorizar arquitecturas — es sobre desarrollar un framework de pensamiento
 > que te permita diseñar cualquier sistema desde cero, comunicar trade-offs con claridad,
 > y tomar decisiones arquitectónicas defendibles bajo presión.
 >
 > Al terminar esta guía podrás:
-> - Atacar cualquier System Design question con un proceso estructurado
+> - Atacar cualquier [[System Design]] question con un proceso estructurado
 > - Conocer los componentes fundamentales y cuándo usar cada uno
-> - Entender CAP theorem, consistencia eventual y sus implicaciones prácticas
-> - Diseñar sistemas escalables con patrones probados en producción
+> - Entender [[CAP theorem]], [[consistencia eventual]] y sus implicaciones prácticas
+> - Diseñar sistemas [[escalabilidad|escalables]] con patrones probados en producción
 > - Resolver 10 casos de estudio completos que cubren los escenarios más frecuentes en entrevistas
-> - Hablar de trade-offs como lo hace un Arquitecto, no como alguien que memoriza respuestas
+> - Hablar de trade-offs como lo hace un [[roadmap_zero_to_hero_updated|Arquitecto]], no como alguien que memoriza respuestas
 
 ---
 
@@ -24,18 +24,18 @@
 2. [El framework mental — el proceso antes que los componentes](#2-el-framework-mental)
 3. [Estimación y back-of-the-envelope math](#3-estimación-y-cálculos)
 4. [Componentes fundamentales del sistema — la caja de herramientas](#4-componentes-fundamentales)
-5. [Load Balancers — distribuir la carga](#5-load-balancers)
-6. [Caching — la capa más rentable de cualquier sistema](#6-caching)
-7. [Message Queues y Event Streaming](#7-message-queues-y-event-streaming)
-8. [API Design y API Gateway](#8-api-design-y-api-gateway)
-9. [CDN — Content Delivery Networks](#9-cdn)
-10. [CAP Theorem aplicado — la decisión que define el sistema](#10-cap-theorem)
-11. [Consistencia eventual — vivir con datos que se sincronizan](#11-consistencia-eventual)
-12. [Patrones de escalabilidad](#12-patrones-de-escalabilidad)
-13. [Alta disponibilidad y Resiliencia](#13-alta-disponibilidad-y-resiliencia)
-14. [Monolito vs Microservicios — cuándo y por qué](#14-monolito-vs-microservicios)
+5. [[Load Balancers]] — distribuir la carga
+6. [[Caching]] — la capa más rentable de cualquier sistema
+7. [[Message Queues]] y [[Event Streaming]]
+8. [[API Design]] y [[API Gateway]]
+9. [[CDN]] — Content Delivery Networks
+10. [[CAP Theorem]] aplicado — la decisión que define el sistema
+11. [[Consistencia eventual]] — vivir con datos que se sincronizan
+12. Patrones de [[escalabilidad]]
+13. Alta disponibilidad y [[Resiliencia]]
+14. [[Monolito]] vs [[Microservicios]] — cuándo y por qué
 15. [Caso 1: URL Shortener (bit.ly)](#15-caso-1-url-shortener)
-16. [Caso 2: Rate Limiter](#16-caso-2-rate-limiter)
+16. [[Rate Limiter]]
 17. [Caso 3: Twitter Feed / News Feed](#17-caso-3-twitter-feed)
 18. [Caso 4: Sistema de Notificaciones](#18-caso-4-sistema-de-notificaciones)
 19. [Caso 5: Sistema de Chat (WhatsApp)](#19-caso-5-sistema-de-chat)
@@ -1461,7 +1461,7 @@ En cambio:
 
 ---
 
-## 16. Caso 2: Rate Limiter
+## 16. Caso 2: [[Rate Limiter]]
 
 ### El problema
 
@@ -1741,7 +1741,7 @@ Storage: 100B × 100 bytes ≈ 10 TB/día de texto
 → Retención 7 días: ~70 TB hot storage | Mensajes antiguos: Azure Archive
 ```
 
-### WebSockets — obligatorio para tiempo real
+### [[WebSockets]] — obligatorio para tiempo real
 
 Para mensajes en tiempo real (< 1 segundo), no puedes usar HTTP polling. Necesitas una conexión persistente bidireccional.
 
@@ -2227,3 +2227,6 @@ El libro más importante de System Design. Lee los capítulos 1, 5, 6, 7, y 9.
 *Guía generada como parte del plan de entrenamiento Staff/Arquitecto — Versión 1.0*
 *Prerequisito: guia_databases_fundamentos_produccion.md*
 *Complementa: roadmap_zero_to_hero_updated.md*
+md*
+ted.md*
+md*

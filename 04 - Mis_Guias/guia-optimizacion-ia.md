@@ -1,7 +1,7 @@
-# Guía Completa de Optimización Multi-IA 2026
+# Guía Completa de Optimización [[Multi-IA]] 2026
 ## [[guia-maxima-ia-subscripciones|ChatGPT Plus]] · [[guia-maxima-ia-subscripciones|Claude Pro]] · [[guia-maxima-ia-subscripciones|Gemini AI Pro]]
 
-> **Nivel:** Senior / Staff Engineer  
+> **Nivel:** Senior / [[roadmap_zero_to_hero_updated|Staff Engineer]]  
 > **Actualizada:** Abril 2026  
 > **Fuentes:** Documentación oficial Anthropic, OpenAI, Google + investigación de comunidad
 
@@ -10,12 +10,12 @@
 ## Índice
 
 1. [Fundamentos de Consumo de IA](#1-fundamentos)
-2. [Manejo de Contexto — Sección Crítica](#2-contexto)
+2. [[Manejo de Contexto]] — Sección Crítica
 3. [Estrategias por Plataforma](#3-plataformas)
 4. [Estrategia Global Multi-IA](#4-multi-ia)
 5. [Flujos de Trabajo Reales](#5-workflows)
-6. [Optimización de Prompts — Nivel Avanzado](#6-prompts)
-7. [CLI y Agentes](#7-cli)
+6. [[Optimización de Prompts]] — Nivel Avanzado
+7. [[CLI]] y [[Agentes]]
 8. [Archivos de Contexto Persistente](#8-archivos-contexto)
 9. [Estrategias de Ahorro de Cuota](#9-ahorro)
 10. [Anti-patrones — Qué Nunca Hacer](#10-antipatrones)
@@ -24,13 +24,13 @@
 
 ---
 
-## 1. Fundamentos de Consumo de IA {#1-fundamentos}
+## 1. Fundamentos de Consumo de [[IA]] {#1-fundamentos}
 
 ### 1.1 Límites reales en 2026 (datos verificados)
 
 Antes de optimizar necesitas entender exactamente contra qué estás jugando.
 
-#### Claude Pro ($20/mes)
+#### [[Claude Pro]] ($20/mes)
 
 | Dimensión | Valor real |
 |---|---|
@@ -38,13 +38,13 @@ Antes de optimizar necesitas entender exactamente contra qué estás jugando.
 | Mensajes cortos / ventana | ~45 mensajes |
 | Mensajes largos / ventana | 20–30 (depende del contexto acumulado) |
 | Límite semanal | Existe desde agosto 2025; afecta al top 5% de usuarios |
-| Contexto máximo | 200K tokens (Enterprise: 500K) |
+| [[Contexto máximo]] | 200K [[tokens]] (Enterprise: 500K) |
 | Todas las superficies cuentan | Claude.ai + [[guia-maxima-ia-subscripciones|Claude Code]] + Claude Desktop = **mismo bucket** |
 | Modelo más caro | Opus consume **3–5× más cuota** que Sonnet |
 
-> **Clave mental:** Los 45 mensajes son con *conversaciones cortas*. Un chat largo de código puede contar como 3–5 "mensajes" en términos de cuota. Cada mensaje re-procesa **todo el historial** del chat como contexto.
+> **Clave mental:** Los 45 mensajes son con *conversaciones cortas*. Un chat largo de código puede contar como 3–5 "mensajes" en términos de cuota. Cada mensaje re-procesa **todo el historial** del chat como [[contexto]].
 
-#### ChatGPT Plus ($20/mes)
+#### [[ChatGPT Plus]] ($20/mes)
 
 | Modelo | Límite | Ventana de reset |
 |---|---|---|
@@ -167,7 +167,7 @@ Ejemplos: Desarrollo de una feature completa, redacción de un documento largo, 
 
 **Regla de oro:** Un chat persistente tiene UN propósito. "Desarrollar el módulo de autenticación" es un buen chat persistente. "Cosas de programación" es un desastre que quema cuota.
 
-#### Patrón 3: Resumen Progresivo
+#### Patrón 3: **[[Resumen Progresivo]]**
 **Para extender la vida útil de chats largos.**
 
 Cuando un chat ya tiene 15–20 intercambios, antes de continuar:
@@ -1420,3 +1420,5 @@ No implementes nada todavía. Solo el plan."
 ---
 
 *Guía generada con datos de documentación oficial de Anthropic, OpenAI y Google, más investigación de comunidad. Última actualización: Abril 2026.*
+6.*
+
