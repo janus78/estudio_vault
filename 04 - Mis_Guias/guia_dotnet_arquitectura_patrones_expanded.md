@@ -1,10 +1,10 @@
 
-# Guía de Arquitectura y Diseño para Entrevistas .NET
-## Fase 5 — Patrones de diseño, Clean Architecture, DDD y principios
+# Guía de Arquitectura y Diseño para [[guia_dotnet_entrevista_completo|Entrevistas .NET]]
+## Fase 5 — Patrones de diseño, [[roadmap_zero_to_hero_updated|Clean Architecture]], DDD y principios
 
 > **Propósito de este documento**
 >
-> Este segundo documento continúa la guía base de .NET, pero cambia el enfoque:
+> Este segundo documento continúa la guía base de [[guia_dotnet_entrevista_completo|.NET]], pero cambia el enfoque:
 >
 > - ya no está centrado en framework/runtime
 > - ahora está centrado en **pensar, diseñar, modelar y justificar decisiones**
@@ -15,7 +15,7 @@
 > - explicar principios de diseño con criterio
 > - distinguir arquitectura limpia real vs “diagrama bonito”
 > - aterrizar DDD sin humo ni palabras vacías
-> - defender decisiones en entrevistas de nivel senior, staff y arquitectura
+> - defender decisiones en [[roadmap_zero_to_hero_updated|entrevistas]] de nivel senior, staff y arquitectura
 >
 > La intención no es solo que “te sepas los nombres”, sino que **sepas cuándo usar algo, cuándo no, qué problemas resuelve y qué problemas introduce**.
 
@@ -32,8 +32,8 @@
 7. Patrones creacionales  
 8. Patrones estructurales  
 9. Patrones de comportamiento  
-10. Patrones arquitectónicos aplicados a .NET  
-11. Clean Architecture explicada de verdad  
+10. Patrones arquitectónicos aplicados a [[guia_dotnet_entrevista_completo|.NET]]  
+11. [[roadmap_zero_to_hero_updated|Clean Architecture]] explicada de verdad  
 12. Capas, dependencias y reglas de dirección  
 13. Casos de uso / application services / interactors  
 14. Entities, Value Objects y Aggregates  
@@ -74,7 +74,7 @@ Por qué alguien inventó ese principio, patrón o enfoque.
 Qué ganas y qué pagas al usarlo.
 
 ## Nivel 4 — Caso real
-Cuándo lo aplicarías en una app empresarial .NET.
+Cuándo lo aplicarías en una app empresarial [[guia_dotnet_entrevista_completo|.NET]].
 
 ## Método recomendado
 
@@ -1231,7 +1231,7 @@ Pasar una solicitud por una cadena de componentes, cada uno con oportunidad de a
 - pipelines de request handling
 
 ### Muy importante para entrevistas
-Porque conecta patrón clásico con ASP.NET Core y con MediatR pipeline behaviors.
+Porque conecta patrón clásico con [[guia_dotnet_entrevista_completo|ASP.NET Core]] y con MediatR pipeline behaviors.
 
 ---
 
@@ -2474,11 +2474,11 @@ Y eso se nota muchísimo en entrevistas serias.
 
 # Próximas fases sugeridas para este segundo documento
 
-1. **Fase 6 — SQL Server y bases de datos para entrevistas**
+1. **Fase 6 — SQL Server y [[guia_databases_fundamentos_produccion|bases de datos]] para entrevistas**
    - joins
    - índices
    - execution plans
-   - transacciones
+   - [[guia_databases_fundamentos_produccion|transacciones]]
    - locking
    - isolation levels
    - tuning real
@@ -5076,4 +5076,3 @@ Y algo importante:
 
 > En entrevistas, SQL no se trata de sintaxis.
 > Se trata de **pensamiento de datos, rendimiento y consistencia**.
-

@@ -1,6 +1,6 @@
 
 # Guía definitiva de entrevistas .NET — Fase 1
-## ASP.NET Core a profundidad para entrevistas senior
+## ASP.NET Core a profundidad para [[roadmap_zero_to_hero_updated|entrevistas]] senior
 
 > Esta fase está enfocada en que puedas estudiar ASP.NET Core de verdad, no solo repetir definiciones.
 > La idea es que al terminar puedas:
@@ -8,7 +8,7 @@
 > - explicar cómo viaja un request internamente
 > - responder preguntas senior con criterio
 > - conectar conceptos de middleware, routing, DI, auth, configuración y performance
-> - defender decisiones reales de arquitectura
+> - defender decisiones reales de [[guia_dotnet_arquitectura_patrones_expanded|arquitectura]]
 
 ---
 
@@ -70,7 +70,7 @@ ASP.NET Core fue rediseñado con estas ideas:
 
 Una buena respuesta sería:
 
-> “ASP.NET Core no lo veo solo como framework de controllers. Lo veo como una plataforma HTTP de propósito general sobre .NET, donde el request atraviesa un pipeline explícito de middleware, llega a un endpoint seleccionado por routing y se apoya en servicios base como DI, logging y configuración. Esa composición es clave para entender performance, seguridad y extensibilidad.”
+> “ASP.NET Core no lo veo solo como framework de controllers. Lo veo como una plataforma HTTP de propósito general sobre .NET, donde el request atraviesa un pipeline explícito de middleware, llega a un endpoint seleccionado por routing y se apoya en servicios base como DI, logging y configuración. Esa composición es clave para entender performance, seguridad y extensibilidad dentro de una [[guia_dotnet_arquitectura_patrones_expanded|arquitectura]] real.”
 
 ---
 
@@ -3919,7 +3919,7 @@ Debes poder explicar:
 
 # Próxima fase
 
-System Design + Arquitectura
+[[guia_dotnet_arquitectura_patrones_expanded|System Design]] + [[guia_dotnet_arquitectura_patrones_expanded|Arquitectura]]
 
 
 
@@ -4256,7 +4256,7 @@ Debes dominar:
 17. Saga Pattern y consistencia distribuida  
 18. Transacciones locales vs consistencia eventual  
 19. Diseño de datos y elección de base de datos  
-20. SQL vs NoSQL y cuándo elegir cada uno  
+20. [[guia_databases_fundamentos_produccion|SQL vs NoSQL]] y cuándo elegir cada uno  
 21. Escalabilidad horizontal y vertical  
 22. Statelessness y manejo de sesión  
 23. Observabilidad: logs, métricas y trazas  
@@ -4817,7 +4817,7 @@ Muchísima gente menciona CQRS sin entenderlo.
 
 Separar el modelo de escritura del modelo de lectura.
 
-No siempre implica dos bases de datos.  
+No siempre implica dos [[guia_databases_fundamentos_produccion|bases de datos]].  
 No siempre implica eventos.  
 No siempre implica microservicios.
 
@@ -6010,4 +6010,3 @@ A partir de aquí, lo ideal sería construir una o varias de estas extensiones:
    - storytelling técnico
    - cómo defender decisiones
    - cómo contestar cuando no sabes algo
-

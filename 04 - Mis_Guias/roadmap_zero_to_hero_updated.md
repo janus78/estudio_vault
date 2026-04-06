@@ -1,7 +1,7 @@
 # Zero to Hero: Roadmap de Maestría para Senior Software Engineer
 
-> **Versión Expandida y Revisada** — DSA · Software Architecture · System Design  
-> Diseñado para ingenieros Senior que apuntan a entrevistas de nivel Staff en FAANG/Big Tech  
+> **Versión Expandida y Revisada** — DSA · [[guia_dotnet_arquitectura_patrones_expanded|Software Architecture]] · [[guia_dotnet_arquitectura_patrones_expanded|System Design]]  
+> Diseñado para ingenieros Senior que apuntan a [[guia_dotnet_entrevista_completo|entrevistas]] de nivel Staff en FAANG/Big Tech  
 > Duración estimada: **26–30 semanas** (dedicación seria, no casual)
 
 ---
@@ -62,8 +62,8 @@ No saltes fases. La Fase 4 requiere comprensión real de la Fase 3. La Fase 3 re
 |------|--------|----------|----------------------|---------|
 | 1 | Fundamentos Visuales y Lógica | 5–6 semanas | Log2Base2 + AlgoExpert | Estructuras de datos, complejidad, bases |
 | 2 | Algoritmos y Patrones de Coding | 7–8 semanas | Educative + AlgoExpert | 15 patrones, DP, Graphs, práctica masiva |
-| 3 | Arquitectura LLD y OOD | 4–5 semanas | Educative | SOLID, GoF, Clean Architecture, OOD |
-| 4 | System Design HLD | 6–7 semanas | Educative + Papers | Distributed systems, escalabilidad, HLD |
+| 3 | Arquitectura LLD y OOD | 4–5 semanas | Educative | SOLID, GoF, [[guia_dotnet_arquitectura_patrones_expanded|Clean Architecture]], OOD |
+| 4 | [[guia_dotnet_arquitectura_patrones_expanded|System Design]] HLD | 6–7 semanas | Educative + Papers | Distributed systems, escalabilidad, HLD |
 | 5 | Temas Transversales Críticos | 3–4 semanas | Mixto | Concurrencia, Networking, Security, Observability |
 
 **Total estimado:** 25–30 semanas de trabajo enfocado (15–20 hrs/semana)
@@ -209,7 +209,7 @@ Completa en 45 minutos sin ayuda: **Word Ladder II** (BFS en grafo implícito), 
 > *"La mayoría de candidatos descuida LLD. Aquí demuestras que eres Senior real, no solo alguien que memorizó diagramas de AWS."*
 
 **Duración:** 4–5 semanas  
-**Objetivo:** Dominar el diseño de clases, objetos, módulos y APIs con principios SOLID, patrones GoF y Clean Architecture.
+**Objetivo:** Dominar el diseño de clases, objetos, módulos y APIs con principios SOLID, patrones GoF y [[guia_dotnet_arquitectura_patrones_expanded|Clean Architecture]].
 
 ### Temas Clave
 
@@ -371,7 +371,7 @@ Usa este framework en todas tus entrevistas HLD:
 | *Dynamo: Amazon's Highly Available Key-value Store* | DeCandia et al., 2007 | Consistent hashing, vector clocks, eventual consistency. Fundamento de DynamoDB y Cassandra. |
 | *Bigtable: A Distributed Storage System for Structured Data* | Chang et al., 2006 | Column-family databases. Base de HBase y Apache Cassandra. |
 | *MapReduce: Simplified Data Processing on Large Clusters* | Dean & Ghemawat, 2004 | Distributed computation. Entiende por qué Spark lo reemplazó y sus limitaciones. |
-| *Spanner: Google's Globally Distributed Database* | Corbett et al., 2012 | TrueTime API, ACID a escala global. El sistema de bases de datos más ambicioso de Google. |
+| *Spanner: Google's Globally Distributed Database* | Corbett et al., 2012 | TrueTime API, ACID a escala global. El sistema de [[guia_databases_fundamentos_produccion|bases de datos]] más ambicioso de Google. |
 | *In Search of an Understandable Consensus Algorithm (Raft)* | Ongaro & Ousterhout, 2014 | Alternativa comprensible a Paxos. Usado en etcd, CockroachDB, TiKV. |
 | *Kafka: a Distributed Messaging System for Log Processing* | Kreps et al., 2011 | Log distribuido, offset commits, consumer groups. Esencial para arquitecturas event-driven. |
 | *The Chubby Lock Service for Loosely-Coupled Distributed Systems* | Burrows, 2006 | Distributed locking, coordination services. Base de Zookeeper. |

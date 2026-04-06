@@ -1,7 +1,7 @@
 # 🧠 Guía Máxima de Aprovechamiento de Suscripciones IA
-### ChatGPT Plus · Gemini Advanced · Claude Pro — $20/mes c/u → $60 total
+### [[guia-optimizacion-ia|ChatGPT Plus]] · [[guia-optimizacion-ia|Gemini Advanced]] · [[guia-optimizacion-ia|Claude Pro]] — $20/mes c/u → $60 total
 
-> **Para quién es esto:** Senior Engineers → Staff/Arquitecto | Trabajo técnico intensivo | Uso diario profesional  
+> **Para quién es esto:** Senior Engineers → [[roadmap_zero_to_hero_updated|Staff/Arquitecto]] | Trabajo técnico intensivo | Uso diario profesional  
 > **Objetivo:** Exprimir cada token, cada límite, cada herramienta disponible en las tres plataformas
 
 ---
@@ -54,13 +54,13 @@ graph TD
 | **Gemini Advanced** | Gemini 2.5 Pro | Mensajes/día | ~50-100 | Más generoso actualmente |
 | **Gemini Advanced** | Gemini 2.0 Flash | Mensajes/día | Muy generoso | Tu caballo de batalla |
 
-> ⚠️ **Importante:** Los límites exactos no son publicados y cambian constantemente. Lo que no cambia es la estrategia: **usar modelos ligeros para trabajo exploratorio, modelos pesados para decisiones finales.**
+> ⚠️ **Importante:** Los límites exactos no son publicados y cambian constantemente. Lo que no cambia es la estrategia: **usar modelos ligeros para trabajo exploratorio, modelos pesados para decisiones finales**, igual que en [[guia-optimizacion-ia|optimización multi-IA]].
 
 ### Los 3 Pecados del Usuario que Agota Límites
 
 1. **El Contexto Zombie** — Conversaciones larguísimas donde el modelo carga 10,000 tokens de historial para responder algo nuevo. Cada mensaje nuevo en una conversación larga consume exponencialmente más.
 
-2. **El Prompt Improvisado** — Ir al modelo sin claridad, generar 5 respuestas basura, refinar, generar 5 más. Un prompt bien pensado = 1 llamada. Un prompt improvisado = 8-15 llamadas.
+2. **El Prompt Improvisado** — Ir al modelo sin claridad, generar 5 respuestas basura, refinar, generar 5 más. Un [[guia-optimizacion-ia|prompt]] bien pensado = 1 llamada. Un prompt improvisado = 8-15 llamadas.
 
 3. **El Modelo Equivocado para la Tarea** — Usar GPT-4o o claude-sonnet-4-6 para resumir un texto corto, hacer una lista de ideas, o formatear código. Eso es como usar un Ferrari para ir a la esquina.
 
@@ -70,7 +70,7 @@ graph TD
 
 ### Las 3 IAs como un Equipo Especializado
 
-No son intercambiables. Cada una tiene fortalezas reales que debes explotar conscientemente.
+No son intercambiables. Cada una tiene fortalezas reales que debes explotar conscientemente dentro de una estrategia [[guia-optimizacion-ia|Multi-IA]].
 
 ```mermaid
 graph LR
@@ -151,7 +151,7 @@ graph TD
 Los **Proyectos** en Claude son la característica más subutilizada y más poderosa de Claude Pro. Un Proyecto te permite:
 
 - **Instrucciones de sistema persistentes** que se aplican a cada conversación dentro del proyecto
-- **Archivos de conocimiento** que el modelo lee en cada sesión (documentación, arquitecturas, contexto de empresa)
+- **Archivos de conocimiento** que el modelo lee en cada sesión (documentación, arquitecturas, [[guia-optimizacion-ia|contexto]] de empresa)
 - **Separación de contextos** por dominio de trabajo
 - **Historial separado** por proyecto, sin contaminación entre temas
 
@@ -187,7 +187,7 @@ Los **Proyectos** en Claude son la característica más subutilizada y más pode
     └── 📄 doc-standards.md
 ```
 
-#### Cómo Escribir un System Prompt Efectivo para un Proyecto
+#### Cómo Escribir un [[guia-optimizacion-ia|System Prompt]] Efectivo para un Proyecto
 
 Un mal system prompt (genérico, corto) desperdicia la oportunidad. Aquí el patrón correcto:
 
@@ -469,7 +469,7 @@ Usa Gemini Flash para exploración rápida e iteraciones. Cuando tengas algo que
 
 ## 6. Herramientas de Código
 
-### 6.1 Claude Code
+### 6.1 [[guia-optimizacion-ia|Claude Code]]
 
 Claude Code es la interfaz de línea de comandos (CLI) de Claude para trabajo de código agentico. Está incluida en tu suscripción Pro y es **fundamentalmente diferente** al chat.
 
@@ -653,7 +653,7 @@ Regla práctica: **Intenta siempre con el modelo medio primero.** Solo escala al
 
 ## 8. Flujos de Trabajo por Caso de Uso
 
-### Flujo 1: Diseño de un Sistema Nuevo (System Design)
+### Flujo 1: Diseño de un Sistema Nuevo ([[guia_dotnet_arquitectura_patrones_expanded|System Design]])
 
 ```mermaid
 sequenceDiagram

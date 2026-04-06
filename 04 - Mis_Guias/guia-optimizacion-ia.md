@@ -1,5 +1,5 @@
 # Guía Completa de Optimización Multi-IA 2026
-## ChatGPT Plus · Claude Pro · Gemini AI Pro
+## [[guia-maxima-ia-subscripciones|ChatGPT Plus]] · [[guia-maxima-ia-subscripciones|Claude Pro]] · [[guia-maxima-ia-subscripciones|Gemini AI Pro]]
 
 > **Nivel:** Senior / Staff Engineer  
 > **Actualizada:** Abril 2026  
@@ -39,7 +39,7 @@ Antes de optimizar necesitas entender exactamente contra qué estás jugando.
 | Mensajes largos / ventana | 20–30 (depende del contexto acumulado) |
 | Límite semanal | Existe desde agosto 2025; afecta al top 5% de usuarios |
 | Contexto máximo | 200K tokens (Enterprise: 500K) |
-| Todas las superficies cuentan | Claude.ai + Claude Code + Claude Desktop = **mismo bucket** |
+| Todas las superficies cuentan | Claude.ai + [[guia-maxima-ia-subscripciones|Claude Code]] + Claude Desktop = **mismo bucket** |
 | Modelo más caro | Opus consume **3–5× más cuota** que Sonnet |
 
 > **Clave mental:** Los 45 mensajes son con *conversaciones cortas*. Un chat largo de código puede contar como 3–5 "mensajes" en términos de cuota. Cada mensaje re-procesa **todo el historial** del chat como contexto.
@@ -55,17 +55,17 @@ Antes de optimizar necesitas entender exactamente contra qué estás jugando.
 
 > **Trampa invisible:** ChatGPT hace *silent downgrade* — cuando agotás el flagship, silenciosamente cambia a mini sin advertencia clara. Si tu código se volvió peor de repente, probablemente estás en mini.
 
-#### Gemini AI Pro ($19.99/mes, antes "Gemini Advanced")
+#### Gemini AI Pro ($19.99/mes, antes "[[guia-maxima-ia-subscripciones|Gemini Advanced]]")
 
 | Modelo | Límite AI Pro | Límite AI Ultra |
 |---|---|---|
-| Gemini 3 Thinking | 300 prompts/día | 1,500/día |
+| Gemini 3 Thinking | 300 [[guia-maxima-ia-subscripciones|prompts]]/día | 1,500/día |
 | Gemini 3.1 Pro | 100 prompts/día | 500/día |
 | Gemini Flash (Fast) | Sin límite fijo | Sin límite fijo |
 | Deep Research | 20/día | 200/día |
 | Contexto máximo | **1 millón de tokens** | 1 millón de tokens |
 
-> **Ventaja brutal de Gemini:** La ventana de 1M tokens es real y es el diferenciador más grande. Para análisis de codebases completos o documentos masivos, no hay competencia.
+> **Ventaja brutal de Gemini:** La ventana de 1M tokens es real y es el diferenciador más grande. Para análisis de codebases completos o documentos masivos, no hay competencia dentro de una estrategia [[guia-maxima-ia-subscripciones|Multi-IA]].
 
 ---
 
@@ -111,7 +111,7 @@ En Claude Pro, un chat de 30 mensajes de código equivale a **consumir ~100 mens
 
 **Instrucciones de proyecto:** Las instrucciones que configuras en un Proyecto de Claude se inyectan en **cada mensaje** de ese proyecto. Una instrucción de 2,000 palabras bien escrita cuesta 2,000 tokens por mensaje.
 
-**Tool definitions en CLI:** Cuando usás Claude Code con MCP servers, las definiciones de herramientas disponibles se incluyen en cada llamada. Un setup con 10 MCP servers puede agregar 5,000–10,000 tokens de overhead por mensaje.
+**Tool definitions en CLI:** Cuando usás [[guia-maxima-ia-subscripciones|Claude Code]] con MCP servers, las definiciones de herramientas disponibles se incluyen en cada llamada. Un setup con 10 MCP servers puede agregar 5,000–10,000 tokens de overhead por mensaje.
 
 **Thinking tokens en modelos de razonamiento:** o3 y Gemini Thinking generan tokens internos de razonamiento que **no ves** pero que sí consumen cuota. Un problema complejo puede generar 50,000+ tokens de "pensamiento" interno.
 
@@ -123,7 +123,7 @@ Esta sección es la más importante del documento. Dominar el contexto es la dif
 
 ### 2.1 El principio fundamental
 
-> **El contexto no es gratis. Cada token en tu ventana de contexto tiene un costo en cuota. Gestionar el contexto es gestionar dinero.**
+> **El [[guia-maxima-ia-subscripciones|contexto]] no es gratis. Cada token en tu ventana de contexto tiene un costo en cuota. Gestionar el contexto es gestionar dinero.**
 
 La mayoría de los usuarios trata los chats como conversaciones humanas — lineales, con todo el historial accesible. Los usuarios avanzados tratan cada chat como una **operación atómica**: propósito claro, contexto mínimo necesario, cierre limpio.
 
@@ -324,7 +324,7 @@ Lo que ya intenté: [lista breve]
 #### Fortalezas reales de Claude
 - **Seguimiento de instrucciones complejas:** El mejor del mercado para prompts estructurados con múltiples restricciones
 - **Análisis de código extenso:** 200K context window es real y funciona bien
-- **Escritura técnica:** Documentación, specs, arquitectura
+- **Escritura técnica:** Documentación, specs, [[guia_dotnet_arquitectura_patrones_expanded|arquitectura]]
 - **Razonamiento multi-paso:** Excelente para arquitectura de sistemas y debugging complejo
 - **Proyectos con memoria persistente:** El sistema de Proyectos + instrucciones es el más maduro
 

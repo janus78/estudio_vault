@@ -1,5 +1,5 @@
 # Guía de Bases de Datos — Fundamentos a Producción
-## Para Senior Engineers apuntando a Staff/Arquitecto
+## Para Senior Engineers apuntando a [[roadmap_zero_to_hero_updated|Staff/Arquitecto]]
 
 > **Propósito de este documento**
 >
@@ -7,16 +7,16 @@
 > que toma un Staff Engineer o Arquitecto en producción. No está pensada para que "sepas usar SQL"
 > — ya sabes. Está pensada para que entiendas **por qué** funciona como funciona, **cuándo** cada
 > motor o estrategia es la decisión correcta, y **cómo** defender esas decisiones en una entrevista
-> o en una revisión de arquitectura real.
+> o en una revisión de [[guia_dotnet_arquitectura_patrones_expanded|arquitectura]] real.
 >
 > Al terminar podrás:
 > - Explicar cómo funcionan los índices por dentro, no solo cómo crearlos
 > - Entender transacciones a nivel de isolation levels y sus trade-offs reales
-> - Decidir con criterio entre SQL y las distintas familias NoSQL
+> - Decidir con criterio entre [[guia_dotnet_entrevista_completo|SQL]] y las distintas familias NoSQL
 > - Diseñar esquemas que escalen sin romper la consistencia
 > - Optimizar queries y detectar problemas de performance antes de que lleguen a producción
 > - Hablar con propiedad de sharding, replicación y consistencia eventual
-> - Conectar todo esto con EF Core en .NET para decisiones cotidianas
+> - Conectar todo esto con [[guia_dotnet_entrevista_completo|EF Core]] en .NET para decisiones cotidianas
 
 ---
 
@@ -60,7 +60,7 @@ razonamiento.
 > a producción real. Úsalo después de leer las secciones 4 y 5 de esta guía para reforzar con
 > ejemplos visuales interactivos.
 
-> 🎓 **Educative** — Los cursos de System Design en Educative cubren la selección de bases de datos
+> 🎓 **Educative** — Los cursos de [[guia_dotnet_arquitectura_patrones_expanded|System Design]] en Educative cubren la selección de bases de datos
 > dentro de cada sistema. Úsalos después de terminar esta guía completa, no antes.
 
 > 🎓 **Pluralsight** — Para Azure específicamente: **"Microsoft Azure SQL Database"** de Leonard Lobel.
@@ -123,7 +123,7 @@ graph TD
 | Pregunta | Respuesta Senior | Respuesta Staff |
 |---|---|---|
 | "¿Cómo indexas esta tabla?" | "Creo un índice en las columnas del WHERE" | "Depende del patrón de acceso: reads vs writes, selectividad de la columna, si necesito covering index. Primero analizo el query plan" |
-| "¿SQL o NoSQL?" | "Depende del caso de uso" | "Primero defino los patrones de acceso, las garantías de consistencia que necesito, y si el modelo de datos es naturalmente relacional. Luego evalúo motores específicos con sus trade-offs concretos" |
+| "¿[[guia_dotnet_entrevista_completo|SQL]] o NoSQL?" | "Depende del caso de uso" | "Primero defino los patrones de acceso, las garantías de consistencia que necesito, y si el modelo de datos es naturalmente relacional. Luego evalúo motores específicos con sus trade-offs concretos" |
 | "¿Por qué está lento este query?" | "Falta un índice" | "Reviso el plan de ejecución: si hay table scans, key lookups, hash joins costosos. Luego el buffer pool hit ratio, estadísticas desactualizadas y si hay blocking queries" |
 
 ---
@@ -905,7 +905,7 @@ CREATE TABLE Orders (
 - El sistema es write-heavy
 - La complejidad de mantener la consistencia no vale el beneficio en reads
 
-> ⚠️ **Regla para entrevistas:** Nunca desnormalices "porque los JOINs son lentos". Primero mide, agrega los índices correctos, y solo desnormaliza si los JOINs siguen siendo el cuello de botella después de la indexación correcta.
+> ⚠️ **Regla para [[guia_dotnet_entrevista_completo|entrevistas]]:** Nunca desnormalices "porque los JOINs son lentos". Primero mide, agrega los índices correctos, y solo desnormaliza si los JOINs siguen siendo el cuello de botella después de la indexación correcta.
 
 ---
 
@@ -2103,5 +2103,4 @@ Lo que nunca hago: optimizar a ciegas. Cada cambio va acompañado de medición a
 ---
 
 *Guía generada como parte del plan de entrenamiento Staff/Arquitecto*
-*Versión 1.0 — Complementa: roadmap_zero_to_hero_updated.md, guia_dotnet_arquitectura_patrones_expanded.md*
-
+*Versión 1.0 — Complementa: [[roadmap_zero_to_hero_updated]], [[guia_dotnet_arquitectura_patrones_expanded]]*
