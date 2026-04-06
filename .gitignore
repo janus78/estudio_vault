@@ -1,0 +1,33 @@
+# macOS / Windows
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Linux / Unix metadata
+._*
+.directory
+
+# Papelera y metadatos de sistemas operativos
+.Trashes/
+.Trash-*/
+$RECYCLE.BIN/
+System Volume Information/
+
+# Archivos temporales y de edicion
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Temporales comunes de Microsoft Office
+~$*
+
+# Obsidian: estado local de la interfaz y cache
+.obsidian/cache/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/Cache/
+
+# Papelera local del vault
+.trash/
