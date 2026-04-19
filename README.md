@@ -11,7 +11,7 @@ El contenido se organiza en las siguientes secciones principales:
 - **[02 - Entrevistas](./02%20-%20Entrevistas/)**: Recursos específicos para la preparación de procesos de selección, incluyendo preguntas típicas y estrategias de resolución.
 - **[03 - System_Design](./03%20-%20System_Design/)**: Material enfocado en el diseño de sistemas a gran escala, escalabilidad y patrones arquitectónicos.
 - **[04 - Mis_Guias](./04%20-%20Mis_Guias/)**: Documentación técnica detallada y guías de referencia rápida creadas durante el proceso de estudio.
-- **[05 - Templates](./05%20-%20Templates/)**: Plantillas reutilizables para mantener la consistencia en las notas y estructuras del vault.
+- **[05 - Templates](./05%20-%20Templates/)**: Plantillas reutilizables para mantener la consistencia en las notas y estructuras del vault. Incluye prompts avanzados para la gestión de contexto en sesiones con IA.
 
 ## 🚀 Contenido Destacado (Mis Guías)
 
