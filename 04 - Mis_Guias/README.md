@@ -24,6 +24,8 @@ Este directorio contiene documentación profunda y frameworks de trabajo creados
 - **[Guía de IA No Técnica](./guia-ia-no-tecnica.docx)**: Conceptos y aplicaciones de IA explicados para perfiles no técnicos o visión de negocio.
 - **[Aprovechamiento de Suscripciones IA](./guia-maxima-ia-subscripciones.md)**: Cómo exprimir los límites y capacidades de las versiones Plus/Pro para el trabajo técnico.
 - **[NotebookLM para Staff Engineers](./guia_notebooklm_staff_engineer.md)**: Metodología para usar NotebookLM como motor de síntesis de conocimiento e integración con Obsidian.
+- **[El Desarrollador Aumentado 2026](./guia_desarrollador_aumentado_2026.md)**: Guía maestra sobre el flujo de trabajo diario con agentes de IA (Codex, Claude Code) y gestión de contexto avanzado.
+
 
 ---
 _Nota: Estas guías son documentos vivos que se actualizan conforme avanza el proceso de aprendizaje y se descubren nuevos patrones en producción._

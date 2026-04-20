@@ -21,7 +21,7 @@ Dentro de la sección de guías personales, se encuentran materiales sobre:
 - **Infraestructura y DevOps:** Observabilidad, seguridad y fundamentos de bases de datos en producción.
 - **Frontend:** Guía para arquitectos frontend.
 - **Carrera y Rol:** Guías para Staff Engineer y roadmaps de aprendizaje (Zero to Hero).
-- **Inteligencia Artificial:** Optimización y gestión de suscripciones de IA.
+- **Inteligencia Artificial:** Flujo de trabajo con agentes (El Desarrollador Aumentado 2026), optimización y gestión de suscripciones.
 - **System Design:** Frameworks específicos para abordar problemas de diseño.
 
 ## 🛠️ Uso
