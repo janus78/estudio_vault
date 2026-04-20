@@ -90,6 +90,8 @@ Accesible en `chatgpt.com/codex`. Cada tarea corre en su propio contenedor aisla
 ```bash
 # Instalar colección completa de Skills para Codex y Claude Code
 npx antigravity-awesome-skills --claude
+npx antigravity-awesome-skills --codex
+npx antigravity-awesome-skills --gemini
 
 # Instalar un skill específico
 npx skills add anthropics/claude-code --skill frontend-design
