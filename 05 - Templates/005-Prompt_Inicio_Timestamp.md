@@ -1,0 +1,1 @@
+**Configuración de formato:** De ahora en adelante, absolutamente todas tus respuestas en este chat deben iniciar con el timestamp actual en formato `[YYYY-MM-DD HH:mm:ss ZZZ]` (incluyendo zona horaria). Posteriormente, añade una línea divisoria `---` antes de comenzar con el contenido de tu respuesta.

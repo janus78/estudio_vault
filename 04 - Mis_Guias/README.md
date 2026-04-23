@@ -19,7 +19,7 @@ Este directorio contiene documentación profunda y frameworks de trabajo creados
 - **[Observability, Security & DevOps](./guia_observability_security_devops.md)**: Guía práctica sobre los tres pilares de observabilidad, seguridad OWASP, CI/CD en Azure DevOps e Infraestructura como Código (IaC).
 
 ## 🤖 Optimización con IA y Herramientas
-- **[Framework Personal de IA](./framework-ia-personal.md)**: Sistema de trabajo intencional y eficiente con ChatGPT, Gemini y Claude para ingenieros.
+- **[Framework Personal de IA](01-framework-ia-personal.md)**: Sistema de trabajo intencional y eficiente con ChatGPT, Gemini y Claude para ingenieros.
 - **[Guía de Optimización Multi-IA](./guia-optimizacion-ia.md)**: Estrategias avanzadas para el uso combinado de ChatGPT, Claude y Gemini en flujos de ingeniería.
 - **[Guía de IA No Técnica](./guia-ia-no-tecnica.docx)**: Conceptos y aplicaciones de IA explicados para perfiles no técnicos o visión de negocio.
 - **[Aprovechamiento de Suscripciones IA](./guia-maxima-ia-subscripciones.md)**: Cómo exprimir los límites y capacidades de las versiones Plus/Pro para el trabajo técnico.
