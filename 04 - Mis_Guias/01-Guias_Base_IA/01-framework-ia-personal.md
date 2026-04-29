@@ -6,7 +6,6 @@
 > **Herramientas cubiertas:** ChatGPT Plus ($20/mes) · Gemini Advanced ($20/mes) · Claude Pro ($20/mes)
 
 ---
-
 ## Tabla de Contenido
 
 1. [La Filosofía Base — Por Qué Falla la Mayoría](#1-la-filosofía-base)
