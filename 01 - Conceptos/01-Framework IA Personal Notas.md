@@ -1,86 +1,82 @@
-- Cambiar el [[modelo mental]] para usar la IA
+# 🧠 Framework IA Personal: Notas de Estudio
 
-### Cosas  cuidar al usar la IA
-- Evitar muchos intercambios en el mismo contexto o chat ya que en cada llamada se reprocesa todo el historial, archivos, enfoque lo que ademas de salir mas caro puede ir degradando o dañando la calidad del chat.
-- No es recomendable llegar con prompts e improvisar sobre todo ya para trabajos serios en un uso casual se puede llevar cuidando el tamaño del contexto pero para le trabajo ya mas serio evitar refinar sobre la marcha o tratar de reducir esto lo mas que se pueda.
-- Tratar y practiicar para siempre decidir el mejor modelo para cada tarea por ejemplo para consultas simples, revisiones cortas de texto no es necesario usar los modelos mas potentes como Opus o Pro ya que gastaran mucho en cosas triviales.
-- Este es el cambio mental inical aproximarse al trabajo con IA de esta forma, la IA aun no tiene la capacidar de razonar como nosotros asi que tenemos que realizar este trabajo previamente.
-### Ingenieria de contexto ([[Context Engineering]])
+Notas personales sobre el cambio de mentalidad y estrategias técnicas para maximizar el uso de modelos de lenguaje.
 
-- Es la evolución del prompt engineering.
-- Se trata de informar lo mas posible la ventana del contexto a la IA para obtener mejores resultados
-- Tratar de integrar la mayor cantidad de informacion al modelo desde el historial, archivos el mismo [[prompt]] y herramientas extras.
-- Acumula el estado en la sesión.
-- Y ahora ya lleva el tema de arquitectura de información para alimentar al modelo.
+---
 
-#### Ventana de contexto
- Es el total de lo que un modelo puede ver de una vez.
- Lo que queda fuera de esa ventana no existe para le modelo.
-Esta ventana se consume con:
-- El prompt actual
-- Todo el historial del chat - <font color="#2DC26B">Este es alerta porque crece de forma exponencial</font>
-- Adjuntos - <font color="#2DC26B">Estos archivos se reprocesan una y otra vez en cada mensaje.</font>
-- Si el proyecto o gema tiene instrucciones predefinidas
-- Las respuestas anteriores
+## ⚠️ Higiene y Cuidados al usar IA
 
-### Estrategias de ingeniería de contexto
+> [!CAUTION] **Cuidado con el historial largo**
+> Evitar muchos intercambios en el mismo contexto o chat. En cada llamada se reprocesa todo el historial, archivos y enfoque. Esto no solo es más caro, sino que **degrada la calidad de la respuesta**.
 
-Se divide principalmente en 4 acciones:
-- Write - lo que se escribe
-- Select - lo que se usa y es util
-- Compress - migrar datos importantes en resumenes de contexto a nuevos chats
-- Isolate - Mantener contextos aislados
+*   **Evita la improvisación:** No es recomendable llegar con prompts e improvisar para trabajos serios. Evita refinar sobre la marcha; planifica el contexto previamente.
+*   **Selección de Modelo:** Decidir el mejor modelo para cada tarea. No gastar modelos potentes (como Opus o Pro) en tareas triviales o revisiones cortas.
+*   **Mentalidad Base:** La IA aún no razona como nosotros. El trabajo de estructuración y razonamiento previo debe ser realizado por el usuario.
 
-#### Write
+---
 
-- Escribir correctamente el contexto
-	- Tratar de proporcionar al modelo toda la informacion que pueda necesitar en el contexto del prompt para que su respuesta y busquedas sean mas efectivas
-	- Por ejemplo el rol requerido o especificaciones tecnicas o enfoque del tema.
-	- El problema presentado detras de esas especificaciones.
-	- Las restricciones importantes a tomar en cuenta.
-	- SI ya se ha intentado algo y no ha funcionado mencionarlo tambien con detalle.
-- Que NO escribir en el contexto
-	- Usar palabras de cortesia o agradecimiento, esto gasta tokens.
-	- Contexto que no sea de utilidad para el enfoque del chat.
-	- SI hay historial anterior en el chat que ya no es relevante o el historial ya no sirve del chat actual iniciar uno nuevo.
-#### Select - Como seleccionar que se puede incluir
+## 🏗️ Ingeniería de Contexto (Context Engineering)
 
-- Si el historial ya no aporta valor iniciar nuevo chat
-- Si los archivos adjuntos ya no son relevantes iniciar chat nuevo sin archivos.
-- SI solo se continua en el mismo chat por comodidad generar historial de contexto e iniciar nuevo chat.
+Es la evolución del *prompt engineering*. Se trata de informar lo más posible la ventana del contexto para obtener mejores resultados superiores.
 
-#### Compress
+### La Ventana de Contexto
+Es el total de lo que un modelo puede "ver" de una vez. Lo que queda fuera, no existe para el modelo. Se consume por:
+*   El prompt actual.
+*   **Todo el historial del chat** (Crecimiento exponencial ⚠️).
+*   **Adjuntos** (Se reprocesan en cada mensaje ⚠️).
+*   Instrucciones predefinidas (Project Instructions / Gems).
+*   Respuestas anteriores.
 
-Se debe tratar siempre de no mexclar temas o conceptos en chats sino que sean atomicos de un tema en particular
-se pueden usar projects en claude y codex y gems en gemini
+### 🛡️ Estrategias Principales (W.S.C.I.)
 
-### Reglas y recomendaciones de higiene de contexto
+| Acción | Descripción |
+| :--- | :--- |
+| **Write** | Escribir correctamente el contexto y las instrucciones. |
+| **Select** | Elegir solo lo que es útil y necesario. |
+| **Compress** | Migrar datos importantes mediante resúmenes a nuevos chats. |
+| **Isolate** | Mantener los contextos aislados y atómicos por tema. |
 
-Se debe siempre de hacer el esfuerzo por usar estas reglas hasta que sea natural implementarlas
+---
 
-1. Siempre iniciar con chat en blanco a no ser que sea muy necesario arrastrar contexto
-2. Una vez se superen 12 intercambios en un chat evaluar si se lleva. aun nuevo chat con resumen de contexto.
-3. Revisar si los archivos adjuntos a un chat ya no son relevantes para eliminarlos y evitar que se reprocesen en cada petición
-4. Si se requiere mucha persistencia en un intervalo largo de tiempo usar projests o gems, no usarlos para conversaciones casuales o irrelevantes.
-5. Tratar de evitar el contexto inutil, si se detecta que ya hay contexto que no sirve en una conversacion pedir un resumen de contexto solo de lo que es relevante y cambiar a un chat nuevo llevandose ese contexto.
+## ✍️ Profundización de Estrategias
 
-### Prompting y su importancia
+### 1. Write (Lo que se escribe)
+*   **Información necesaria:** Rol requerido, especificaciones técnicas, enfoque del tema y el problema de fondo.
+*   **Restricciones:** Mencionar qué se ha intentado y qué no ha funcionado con detalle.
+*   **Qué NO escribir:** Evitar palabras de cortesía o agradecimiento (gastan tokens) y contexto irrelevante.
 
+### 2. Select (Lo que se incluye)
+*   Si el historial o los archivos adjuntos ya no aportan valor, **iniciar un chat nuevo**.
+*   Si continúas por "comodidad", es mejor generar un resumen de contexto y saltar a una sesión limpia.
 
-- Es determinante para la calidad de la salida.
-- Es el factor que como usuarios mas podemos controlar
-- Los prompt de alto nivel usualmente tienen estos 5 componentes aunque depende de la necesidad pueden o no usarse todos:
-	- Rol - Perspectiva
-	- Contexto
-	- Tarea a realizar
-	- Formato - Salida
-	- Restricciones
+---
 
-Los modelos procesan el contexto completo pero genera los tokens secuenciales.
+## 📏 Reglas de Higiene de Contexto
 
-- Lo inicial o primero tiene mas relevancia.
-- Entre mas especifico se obtienen respuestas mas precisas.
-- Si se le pueden dar ejemplos mejor tratar de evitar o reducir las instrucciones abstractas.
-- tratar de evitar las negaciones y usar mejor afirmaciones positivas es mas probable que el modelo entienda esas evitar "no uses", "que no tenga" y mejor usar "explica para alguien que tiene cero conocimiento" o sentencias similares.
-- Tratar de encontrar o definir correctamente el rol ya que incrementa mucho la calidad de las respuestas.
+1.  **Chat en blanco:** Iniciar siempre con chat limpio a menos que sea estrictamente necesario arrastrar contexto.
+2.  **Regla de los 12:** Al superar 12 intercambios, evaluar migrar a un nuevo chat con un resumen de contexto.
+3.  **Gestión de adjuntos:** Eliminar archivos que ya no sean relevantes para evitar su reprocesamiento constante.
+4.  **Persistencia:** Usar *Projects* (Claude) o *Gems* (Gemini) para persistencia a largo plazo, no para charlas casuales.
+5.  **Contexto útil:** Si detectas ruido, pide un resumen de lo relevante y cámbiate de chat.
 
+---
+
+## 🚀 Prompting de Alto Nivel
+
+El factor que más controlamos como usuarios y que determina la calidad de la salida.
+
+### Los 5 Componentes Esenciales
+| Componente | Función |
+| :--- | :--- |
+| **Rol** | Define la perspectiva y el tono. |
+| **Contexto** | Antecedentes y situación actual. |
+| **Tarea** | Qué acción específica debe realizar. |
+| **Formato** | Cómo debe entregarse la salida (JSON, Markdown, tabla). |
+| **Restricciones** | Límites y lo que se debe evitar. |
+
+### Mejores Prácticas
+*   **Prioridad:** Lo que aparece al inicio del prompt tiene más relevancia para el modelo.
+*   **Especificidad:** A mayor detalle, mayor precisión. Evitar instrucciones abstractas.
+*   **Ejemplos (Few-shot):** Dar ejemplos es mejor que dar instrucciones.
+*   **Afirmaciones Positivas:** Evitar negaciones ("no hagas x"). Es mejor decir "haz y" o "explica para alguien con cero conocimiento".
+*   **Definición de Rol:** Incrementar la calidad de las respuestas encontrando el rol experto adecuado.
