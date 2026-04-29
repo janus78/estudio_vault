@@ -27,7 +27,16 @@ System Volume Information/
 .obsidian/cache/
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/app.json
 .obsidian/Cache/
+.obsidian/backups/
+
+# SEGURIDAD: Prevenir leaks de API Keys en plugins
+.obsidian/plugins/**/data.json
+
+# Conflictos de sincronización (Syncthing/Dropbox/iCloud/etc)
+**/*.sync-conflict-*
+**/*.icloud
 
 # Papelera local del vault
 .trash/
