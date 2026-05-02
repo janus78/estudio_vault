@@ -42,4 +42,4 @@ Proporcionar una capa de abstracción que permita:
 
 ---
 
-*Última actualización: 30 de Abril, 2026*
+*Última actualización: 1 de Mayo, 2026*

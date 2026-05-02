@@ -16,9 +16,9 @@ El contenido se organiza en las siguientes secciones principales:
 
 ## 🚀 Contenido Destacado
 
-- **Staff Engineer Path:** Roadmaps detallados y módulos de fundamentos CS.
-- **IA Workflow:** Framework personal de IA, agentes y optimización de suscripciones.
-- **Arquitectura:** Deep dives en .NET, System Design y Observabilidad.
+- **Staff Engineer Path:** Roadmaps detallados y 6 módulos completos que van desde fundamentos CS hasta IA Avanzada.
+- **IA Workflow:** Framework personal de IA, agentes inteligentes y optimización de suscripciones.
+- **Arquitectura:** Inmersión profunda en .NET, System Design, Observabilidad y Patrones Distribuidos.
 
 ## 🛠️ Uso
 
