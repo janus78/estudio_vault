@@ -63,13 +63,13 @@ Todos los archivos de esta carpeta, organizados por subcarpeta, con su rol en el
 
 ### 📁 01 — Guías Base IA
 
-| Archivo | Descripción | Cuándo Usarlo |
-|---------|-------------|---------------|
-| `01-framework-ia-personal.md` | Framework completo para usar ChatGPT, Gemini y Claude con criterio diferenciado por herramienta | **Fase 0** — Antes de empezar cualquier estudio |
-| `02-guia_desarrollador_aumentado_2026.md` | Flujo de trabajo real con agentes IA (Claude Code, Codex CLI). Cómo operar como Desarrollador Aumentado | **Fase 0** — Configuración del entorno de trabajo |
-| `guia-maxima-ia-subscripciones.md` | Optimización de límites y cuotas de Claude Pro, ChatGPT Plus y Gemini Advanced | **Fase 0** — Configuración + referencia permanente |
-| `guia-optimizacion-ia.md` | Multi-IA: estrategia de orquestación, gestión de contexto, prompts avanzados | **Fase 0** + referencia cuando notes ineficiencias |
-| `guia-ia-no-tecnica.docx` | Perspectiva no técnica sobre IA (complemento contextual) | Opcional — referencia durante Módulo 6 |
+| Archivo                                   | Descripción                                                                                             | Cuándo Usarlo                                      |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| `01-framework-ia-personal.md`             | Framework completo para usar ChatGPT, Gemini y Claude con criterio diferenciado por herramienta         | **Fase 0** — Antes de empezar cualquier estudio    |
+| `02-guia_desarrollador_aumentado_2026.md` | Flujo de trabajo real con agentes IA (Claude Code, Codex CLI). Cómo operar como Desarrollador Aumentado | **Fase 0** — Configuración del entorno de trabajo  |
+| `guia-maxima-ia-subscripciones.md`        | Optimización de límites y cuotas de Claude Pro, ChatGPT Plus y Gemini Advanced                          | **Fase 0** — Configuración + referencia permanente |
+| `guia-optimizacion-ia.md`                 | Multi-IA: estrategia de orquestación, gestión de contexto, prompts avanzados                            | **Fase 0** + referencia cuando notes ineficiencias |
+| `guia-ia-no-tecnica.docx`                 | Perspectiva no técnica sobre IA (complemento contextual)                                                | Opcional — referencia durante Módulo 6             |
 
 ### 📁 02 — Comunicación
 
@@ -137,7 +137,7 @@ Estas técnicas están respaldadas por décadas de investigación en psicología
 **Cómo aplicarlo aquí:**
 - Antes de leer `01-01-estructuras-de-datos.md`: escribe de memoria qué estructuras conoces y cuál es su complejidad
 - Después de leer: sin ver el archivo, reproduce los conceptos centrales en tu propio lenguaje
-- Con Claude: "Explícame que es un heap como si nunca lo hubiera escuchado" → luego evalúa tu respuesta
+- Con Claude o tu IA disponible: "Explícame que es un heap como si nunca lo hubiera escuchado" → luego evalúa tu respuesta
 
 #### B. Repetición Espaciada (Spaced Repetition)
 
@@ -154,7 +154,7 @@ Estas técnicas están respaldadas por décadas de investigación en psicología
 
 **Cómo aplicarlo aquí:**
 - Después de cada archivo, escribe una explicación del concepto central como si se lo explicaras a alguien de otro campo
-- Usa a Claude como interlocutor: "Voy a explicarte el CAP Theorem con mis propias palabras. Dime qué está bien, qué está incompleto y qué está equivocado"
+- Usa a Claude o tu IA Disponible como interlocutor: "Voy a explicarte el CAP Theorem con mis propias palabras. Dime qué está bien, qué está incompleto y qué está equivocado"
 - Si no puedes escribir la explicación, el archivo no está terminado — vuelve a leerlo
 
 #### D. Práctica Intercalada (Interleaving)
@@ -188,7 +188,7 @@ Cada sesión de estudio debe seguir este ciclo, sin excepción:
 ║  [60-90m]  Lectura profunda del archivo + notas propias  ║
 ║  [15 min]  Cierre el archivo → reproduce de memoria      ║
 ║  [20-30m]  Ejercicio práctico (código, diseño, verbal)   ║
-║  [10 min]  Sesión Claude: valida comprensión o mock      ║
+║  [10 min]  Sesión Claude o tu IA disponible: valida comprensión o mock      ║
 ║  [5 min]   Crea 3-5 tarjetas Anki con los puntos clave  ║
 ╚══════════════════════════════════════════════════════════╝
 ```
@@ -198,7 +198,7 @@ Cada sesión de estudio debe seguir este ciclo, sin excepción:
 Las IAs son tutores y evaluadores, no sustitutos del esfuerzo cognitivo. Reglas:
 
 1. **Sesiones separadas por propósito:** No mezcles "crear notas" con "práctica de entrevista" en la misma conversación. El contexto se degrada.
-2. **Primero intenta, después pide ayuda:** Nunca abras Claude antes de haber intentado resolver el problema durante al menos 20 minutos solo.
+2. **Primero intenta, después pide ayuda:** Nunca abras Claude o tu IA disponible antes de haber intentado resolver el problema durante al menos 20 minutos solo.
 3. **Valida tu comprensión, no la confirmes:** En vez de "¿está bien lo que entendí?", di "Explícame el concepto" y luego tú lo dices primero — pide que evalúen tu versión.
 4. **Simulacros reales:** En entrevistas mock, no pares a preguntar — simula exactamente las condiciones reales. El discomfort es el punto.
 
@@ -298,7 +298,7 @@ flowchart LR
 - [ ] Lee `01-framework-ia-personal.md` completo — identifica las diferencias reales entre ChatGPT, Gemini y Claude para TUS tareas de estudio
 - [ ] Lee `guia-optimizacion-ia.md` — implementa el framework de decisión: qué IA usar para qué tarea
 - [ ] Lee `guia-maxima-ia-subscripciones.md` — configura tu flujo diario para no quemar cuotas en tareas que no las requieren
-- [ ] Configura un **Proyecto en Claude.ai** exclusivo para estudio técnico con un system prompt que tenga tu perfil, tus gaps y tus objetivos
+- [ ] Configura un **Proyecto en Claude.ai**, Proyecto de ChatGpt o Gem de Gemini usa la IA que tengas disponible exclusivo para estudio técnico con un system prompt que tenga tu perfil, tus gaps y tus objetivos
 
 **Día 3: NotebookLM**
 - [ ] Lee `guia_notebooklm_staff_engineer.md` secciones 1-4 y 7-9
@@ -310,13 +310,13 @@ flowchart LR
   - `NB-Entrevistas` — cargar Módulo 7 + guías de entrevista
 
 **Día 4-5: Entorno de desarrollo**
-- [ ] Lee `02-guia_desarrollador_aumentado_2026.md` — configura Claude Code y tu flujo de trabajo con agentes
+- [ ] Lee `02-guia_desarrollador_aumentado_2026.md` — configura Claude Code o la IA disponible y tu flujo de trabajo con agentes
 - [ ] Instala Anki y crea mazos separados por módulo (ver sección de complementos externos)
 - [ ] Instala extensiones de Obsidian recomendadas si no las tienes: Calendar, Periodic Notes, Spaced Repetition
 
 ### 5.3 Configuración del Project Claude para estudio
 
-Crea un proyecto en Claude.ai con este system prompt como base (adaptarlo con tus datos reales del diagnóstico):
+Crea un proyecto en Claude.ai, un proyecto de ChatGpt o un Gem de Gemini el qu tengas disponible con este system prompt como base (adaptarlo con tus datos reales del diagnóstico):
 
 ```
 Eres mi mentor técnico para la preparación de entrevistas a nivel Staff Engineer.
@@ -407,7 +407,7 @@ flowchart LR
 
 ### 7.3 Protocolo de sesiones Claude en esta fase
 
-🤖 **Uso de Claude en Módulo 1 — ejemplos concretos:**
+🤖 **Uso de Claude o tu IA disponible en Módulo 1 — ejemplos concretos:**
 
 - **Después de `01-01`:** "Acabo de estudiar estructuras de datos. Hazme 5 preguntas de profundidad sobre B-Trees y Hash Maps, como si estuvieras en una entrevista de Staff Engineer. Empieza cuando quieras."
 - **Después de `01-02`:** "Voy a explicarte amortized O(1) con mis propias palabras: [tu explicación]. Evalúa precisión técnica y completitud. No me des la respuesta antes de escuchar la mía."
@@ -699,7 +699,7 @@ Estos recursos funcionan durante todo el recorrido, no en una fase específica.
 
 Desde la Fase 3 en adelante, dedica **30–45 minutos por semana** a:
 - Documentar 1-2 decisiones técnicas de tu trabajo actual y traducirlas a impacto de negocio
-- Practicar 1 framework de comunicación (sección 11 del archivo) con Claude
+- Practicar 1 framework de comunicación (sección 11 del archivo) con Claude o tu IA disponible
 - Actualizar tu narrativa profesional con evidencia nueva
 
 Esta práctica continua es lo que diferencia a quienes llegan a las entrevistas con ejemplos vívidos de quienes improvisando con ejemplos vagos.
